@@ -26,4 +26,4 @@ Another thing I'd want to change is to make the 'drops' from the bricks data dri
 
 Overall, I enjoyed the project, and found myself laying in bed at night thinking of what I can do to make it more fun, or how I would code different things, etc.  I would do a lot of things different if it was a more long term project, but I'm happy with what I ended up with.
 
-Towards the end, the coding got a little chaotic, with putting events and references primarily in the GameGrid, it basically because my Game Manager.  Also, I would rather load the level data from disk, instead of have it all referenced in the inspector... lots of things I would change.
+Towards the end, the coding got a little chaotic, with putting events and references primarily in the GameGrid, it basically became my Game Manager.  Also, I would rather load the level data from disk, instead of have it all referenced in the inspector... lots of things I would change.
