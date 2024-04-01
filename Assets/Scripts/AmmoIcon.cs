@@ -1,8 +1,5 @@
-using System;
-using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class AmmoIcon : MonoBehaviour
 {
