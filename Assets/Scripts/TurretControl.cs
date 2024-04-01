@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -150,7 +149,7 @@ public class TurretControl : MonoBehaviour
             laserComponent.GeneratePath(transform.position, AimInputControl.InputDirection);
         }
 
-        if (laserRenderer != null && Input.GetMouseButton(0) && AimInputControl.CanFire)
+        if (laserRenderer != null && Input.GetKey(KeyCode.Space) && AimInputControl.CanFire)
         {
             if (currentGunControl.AmmoAmount <= currentGunControl.MinAmmoAmount)
             {

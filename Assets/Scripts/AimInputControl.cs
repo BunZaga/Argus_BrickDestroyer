@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.PlayerLoop;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class AimInputControl : MonoBehaviour
@@ -33,7 +31,7 @@ public class AimInputControl : MonoBehaviour
         GameGrid.EvtOpenSwapAmmo.AddListener(OnSwapAmmoShow);
         GameGrid.EvtCloseSwapAmmo.AddListener(OnSwapAmmoHide);
     }
-
+    
     private void OnGameStart()
     {
         raycaster.enabled = true;
@@ -69,6 +67,10 @@ public class AimInputControl : MonoBehaviour
     
     private void UpdateAimInput()
     {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            evtOnMouseUp.Invoke();
+        }
         screenPoint.x = Input.mousePosition.x;
         screenPoint.y = Input.mousePosition.y;
         screenPoint.z = 50.0f;
